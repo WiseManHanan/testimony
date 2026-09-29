@@ -1,0 +1,22 @@
+{
+  "name": "testimony",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types src/core/core.test.ts && node --experimental-strip-types src/core/grader.test.ts && node --experimental-strip-types src/game/annotations.test.ts",
+    "typecheck": "tsc --noEmit",
+    "tune": "node --experimental-strip-types src/tools/tune.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "tone": "^15.0.4"
+  }
+}
